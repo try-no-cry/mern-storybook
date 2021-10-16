@@ -1,0 +1,23 @@
+connect-mongo  : allows to store sessions on db so that when we reset servers,
+                 we don't get logged out 
+express-session: for sessions and cookies
+express-handlebar: template engine like pug and al 
+dotenv : for config
+morgan: http request logger
+method-override: put-del method from template
+moment: to format dates 
+passport : auhtnetication
+passport-google-oauth2 : for g insta
+
+npm i  express mongoose connect-mongo express-session express-handlebars dotenv method-override moment morgan passport passport-google-oauth20
+npm i -D nodemon cross-env 
+
+1. Edit the package.json to have different commands for dev and prod env
+2. Create app.js
+   1. Create config file to include config.env variables
+   2. Define port and listen 
+   3. npm run dev
+3. Connect to mongo database
+   1.Create db.js in config folder
+   2. Use that db file in app.js 
+4. setup morgan for logging requests 
